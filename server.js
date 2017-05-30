@@ -1,0 +1,8 @@
+var Gun     = require('gun')
+var express = require('express')
+var app     = express()
+app.use(Gun.serve)
+app.use(express.static(__dirname))
+var server = app.listen(8081)
+Gun({file: 'data.json', web: server})
+console.log('server running @ ' + 8081)
