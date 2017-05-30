@@ -7,6 +7,10 @@ https://github.com/quasarframework/quasar
 
 ## Build Setup
 
+```bash
+$ git clone https://github.com/beebase/gun-vuex-quasar.git
+$ cd gun-vuex-quasar
+```
 ``` bash
 # install dependencies
 $ npm install
@@ -16,6 +20,7 @@ $ npm install
 $ node server
 ```
 ```bash
+# open new terminal
 # start up client app with hot reload at localhost:8080
 $ quasar dev
 ```
