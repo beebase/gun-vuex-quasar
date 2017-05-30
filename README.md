@@ -1,6 +1,8 @@
 # Gun Vuex Quasar 
 
-> An example of binding Gun to Vuex
+> An example of binding Gun to Vuex based on:
+https://github.com/amark/gun/tree/master/examples/vue written by 
+https://github.com/sjones6 
 
 > Quasar is a great GUI framework for building Mobile Apps and Web sites
 https://github.com/quasarframework/quasar
