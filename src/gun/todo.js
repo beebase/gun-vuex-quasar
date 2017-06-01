@@ -9,7 +9,8 @@ const todos = gun.get('todo')
 export const subscribe   = (cb) => {
   todos.map()
        .on(
-         (item) => {
+         (item, key) => {
+           item.key = key
            cb(item)
          }
        )
@@ -34,13 +35,6 @@ export const add         = (todo) => {
   // You can still reach for the todo node directly, later on with
   // gun.get(pkTodo) !!
   todos.set(todo)                // Create and attach new todo to todos
-       .val((newTodo, ID) => {   // Receive the new todo,
-         newTodo.key = ID        // attach key as property to new todo,
-         // for easy fetching later on
-         // See methods 'complete', 'reopen' etc below
-         // NOT SURE YET IF THIS IS BEST PRACTICE.
-         update(newTodo)
-       })
 }
 export const complete    = (todo) => {
   // You don't have to update with entire todo object
