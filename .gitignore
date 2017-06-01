@@ -11,3 +11,4 @@ cordova/plugins
 thumbs.db
 !.gitkeep
 .idea
+/data.json
